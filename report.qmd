@@ -2,14 +2,16 @@
 title: "土壤有机质分子特征与细菌丰富度可复现分析"
 author: "张晋、唐艳、吴铭洲、徐蔚宝、师祎锴"
 date: "2026-04-02"
-repo-url: "https://github.com/zj0022/my-repro-project"
+repo-url: "https://github.com/D2RS-2026spring/my-repro-project"
 format:
   html:
     toc: true
+    toc-depth: 3
+    self-contained: true
     code-fold: false
 ---
 
-> 📦 **源代码**: [GitHub 仓库](https://github.com/zj0022/my-repro-project)
+> 📦 **源代码**: [GitHub 仓库](https://github.com/D2RS-2026spring/my-repro-project)
 
 # 1. 研究背景
 
