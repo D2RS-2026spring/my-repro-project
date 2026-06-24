@@ -13,7 +13,13 @@ format:
 
 # 1. 研究背景
 
-本项目基于 Nature Food (2025) 文献，复现长期稻田与旱地农田土壤有机质（SOM）的分子演化规律，验证：
+本项目基于以下文献进行复现：
+
+> **原始论文**: Molecular characteristics of soil organic matter and bacterial richness regulate the thermodynamic stability trade-off
+> - 期刊: Nature Food (2025)
+> - DOI: 见仓库中 `数据驱动文献.pdf`
+
+复现长期稻田与旱地农田土壤有机质（SOM）的分子演化规律，验证：
 
 **细菌丰富度通过调控分子多样性–热力学稳定性权衡，提升SOM热稳定性。**
 
@@ -38,12 +44,47 @@ format:
 ### 运行方式
 
 ```bash
-pip install numpy matplotlib scipy
+# 创建虚拟环境（推荐）
+python3 -m venv venv
+source venv/bin/activate
+
+# 安装依赖
+pip install numpy==1.24.0 matplotlib scipy
+
+# 运行脚本
 python fig1.py
 python fig2.py
 python fig3.py
 python fig4.py
 ```
+
+### 复现结果
+
+#### 图1：SOM热稳定性与分子特征相关性分析
+
+![图1：SOM热稳定性与分子特征相关性](python语言复现/fig1.png)
+
+- **图a-b**: SOM热稳定性指数与ΔG°cox的正相关关系（稻田 ρ=0.831，旱地 ρ=0.903）
+- **图c-d**: SOM分子丰富度与ΔG°cox的负相关关系（稻田 ρ=-0.708，旱地 ρ=-0.723）
+- **图e-f**: 向量角度随耕作年限的变化趋势
+
+#### 图2：SOM热稳定性与分子多样性权衡
+
+![图2：SOM热稳定性与分子多样性权衡](python语言复现/fig2.png)
+
+展示SOM热稳定性与分子多样性之间的长期权衡关系。
+
+#### 图3：细菌丰富度与SOM分子特征相关性
+
+![图3：细菌丰富度与SOM分子特征相关性](python语言复现/fig3.png)
+
+验证细菌丰富度对SOM分子特征的调控作用。
+
+#### 图4：验证实验中分子特征变化
+
+![图4：验证实验中分子特征变化](python语言复现/fig4.png)
+
+不同时间点的分子特征动态变化。
 
 ## 3.2 R 语言复现
 
